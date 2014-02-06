@@ -114,7 +114,7 @@ footer {
 	  section {
 		  padding: 10px 0;
 		  border-top: 1px solid $grayLighter;
-		  $:first-child {
+		  &:first-child {
 			  border: 0;
 			  padding-top: 0;
 		  }
@@ -136,5 +136,17 @@ footer {
   .gravatar {
 	  float: left;
 	  margin-right: 10px;
+  }
+  
+  /* forms */
+  input, textarea, select, .uneditable-input {
+	  border: 1px solid #bbb;
+	  width: 100%;
+	  margin-bottom: 15px;
+	  @include box_sizing;
+  }
+  
+  input {
+	  height: auto !important;
   }
 }
