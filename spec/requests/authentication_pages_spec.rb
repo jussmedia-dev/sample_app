@@ -79,7 +79,7 @@ describe "Authentication" do
         
         describe "After signing in" do
           it "should render the desired protected page" do
-            expect(page).to have_title('Edit User')
+            expect(page).to have_title('Edit user')
           end
         end
       end
